@@ -166,7 +166,7 @@ public class HelloController {
 
 		}	
 		
-		// CHANGING
+		//changed and functional
 		@RequestMapping(value = "/Theatermoviesearch", method= RequestMethod.GET)
 		public ModelAndView Theatermoviesearchform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie)
 		{			
@@ -175,74 +175,43 @@ public class HelloController {
 			Tmovie.getSearchmovie();
 			if("Search_by_movies".equalsIgnoreCase(Tmovie.getSearchmovie()))
 			{
+				
 				List<Theatermoviesearch> Tmovielist  = tms.selectList(Tmovie);
 				model.addObject("Tmovielist", tms.selectList(Tmovie));
 				
 			}
-			
 			
 			else {
 				List<Theatermoviesearch> Ttheaterlist  = tms.selectListTh(Tmovie);
 				model.addObject("Ttheaterlist", tms.selectListTh(Tmovie));
 				
 			}
-			
 			return model;
 		}
 		
+		//CHANGING
 		@RequestMapping(value = "/Movietheaterlist", method= RequestMethod.GET)
 		public ModelAndView Movietheaterlistform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie, HttpServletRequest request)
 		{			
-			StringBuffer sb= new StringBuffer();
+			ModelAndView model = new ModelAndView("TMtheaterlist");
 			TmoviesearchDAO td = new TmoviesearchDAO();
 			Tmovie.getSearchmovie();
 			if("Search_by_movies".equalsIgnoreCase((String)request.getParameter("Searchmovie")))
 			{
-			
-			Tmovie.setMoviename(request.getParameter("moviename"));
-			Tmovie.setZipcode(request.getParameter("zipcode"));
-			Tmovie.setDate(request.getParameter("date"));
-			List<Theatermoviesearch> theatres = td.selectListTheatre(Tmovie);
-			sb.append("<table>");
-			sb.append("<tr><th><h1>Zipcode:"+theatres.get(0).getZipcode()+"</h1></th></tr>");
-			sb.append("<tr>moviename:"+theatres.get(0).getMoviename()+"</tr>");
-			sb.append("<tr>date:"+theatres.get(0).getDate()+"</tr>");
-			for(Theatermoviesearch m: theatres){
-				sb.append("<tr>");
-				sb.append("<td> ");
-				sb.append("<a href="+"/Movie/TMtheaterlist?Theatername="+ m.getTheatername()/*.replaceAll("\\s+","")*/+"&zipcode="+ m.getZipcode()+"&moviename="+m.getMoviename()+"&date="+ m.getDate()+">" +m.getTheatername()/*.replaceAll("\\s+","")*/);
-				sb.append("</a>");
-				sb.append("</td>");
-				sb.append("</tr>");
-			}
-			sb.append("</table>");
+				Tmovie.setMoviename(request.getParameter("moviename"));
+				Tmovie.setZipcode(request.getParameter("zipcode"));
+				Tmovie.setDate(request.getParameter("date"));
+				List<Theatermoviesearch> theatres = td.selectListTheatre(Tmovie);
+				model.addObject("theatres", td.selectListTheatre(Tmovie));
 			}
 			else
 			{
-				Tmovie.setTheatername(request.getParameter("Theatername"));
-				Tmovie.setZipcode(request.getParameter("zipcode"));
-				Tmovie.setDate(request.getParameter("date"));
-				List<Theatermoviesearch> theatres = td.selectListThm(Tmovie);
-				
-				sb.append("<tr><th><h1>Zipcode:"+theatres.get(0).getZipcode()+"</h1></th></tr>");
-				sb.append("<table>");
-				sb.append("<tr>Theatername:"+theatres.get(0).getTheatername()+"</tr>");
-				sb.append("<tr>date:"+theatres.get(0).getDate()+"</tr>");
-				for(Theatermoviesearch m: theatres){
-					sb.append("<tr>");
-					sb.append("<td> ");
-					sb.append("<a href="+"/Movie/TMtheaterlist?moviename="+ m.getMoviename().replaceAll("\\s+","")+"&zipcode="+ m.getZipcode()+"&Theatername="+m.getTheatername().replaceAll("\\s+","")+"&date="+ m.getDate()+">" +m.getMoviename());
-					sb.append("</a>");
-					sb.append("</td>");
-					sb.append("</tr>");
-				}
-				sb.append("</table>");
-				}
+				List<Theatermoviesearch> theatres = td.selectListThm(Tmovie);	
+				model.addObject("theatres", td.selectListThm(Tmovie));
+			}
 			
-		ModelAndView model = new ModelAndView("TMtheaterlist");
-		model.addObject("TmovieTjsp",sb.toString());
-		return model;
-}
+			return model;
+		}
 
 
 @RequestMapping(value = "/TMtheaterlist", method= RequestMethod.GET)
