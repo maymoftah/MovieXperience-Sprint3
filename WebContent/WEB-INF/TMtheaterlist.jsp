@@ -72,24 +72,23 @@
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 				
-
+			<h1> Theatres</h1>
+			
+			<c:forEach items="${Tmovielist}" var = "theaterlist">
+				<c:url value="/TMtheaterList" var = "tlistlink">
+					<c:param name="theatername" value="${theaterlist.theatername}"/>
+					<c:param name="zipcode" value="${theaterlist.zipcode}"/>
+					<c:param name="moviename" value="${theaterlist.moviename}"/>
+					<c:param name="date" value="${theaterlist.date}"/>
+				</c:url>
+				<c:import url="${tlistlink}"/>
+			</c:forEach>
 			
 				</div>
 				</nav>
 				</div>
 				</div>
-				
-			<c:forEach items="${theatres}" var = "theaterlist">
-				<c:url value="TMtheaterList" var = "tlistlink">
-					<c:param name="theatername" value="${theater.theatername}"/>
-					<c:param name="zipcode" value="${theater.zipcode}"/>
-					<c:param name="moviename" value="${theater.moviename}"/>
-					<c:param name="date" value="${theater.date}"/>
-				</c:url>
-				<c:import url="${tlistlink}"/>
-			<a href =<c:url value = "${tlistlink}"/>> ${theaterlist.theatername}</a>
-			</c:forEach>
-			
+
 			
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

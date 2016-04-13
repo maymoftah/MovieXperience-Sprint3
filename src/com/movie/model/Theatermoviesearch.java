@@ -13,7 +13,7 @@ public String getSearchmovie() {
 }
 
 public void setSearchmovie(String searchmovie) {
-	Searchmovie = searchmovie;
+	this.Searchmovie = searchmovie;
 }
 
 public String getDate() {

@@ -191,14 +191,14 @@ public class HelloController {
 		
 		//CHANGING
 		@RequestMapping(value = "/Movietheaterlist", method= RequestMethod.GET)
-		public ModelAndView Movietheaterlistform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie, HttpServletRequest request)
+		public ModelAndView Movietheaterlistform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie)
 		{			
 			ModelAndView model = new ModelAndView("TMtheaterlist");
 			TmoviesearchDAO td = new TmoviesearchDAO();
 			Tmovie.getSearchmovie();
-			if("Search_by_movies".equalsIgnoreCase((String)request.getParameter("Searchmovie")))
+			if("Search_by_movies".equalsIgnoreCase(Tmovie.getSearchmovie()))
 			{
-		
+				
 				List<Theatermoviesearch> theatres = td.selectListTheatre(Tmovie);
 				model.addObject("theatres", td.selectListTheatre(Tmovie));
 			}

@@ -75,9 +75,10 @@
      
       			
 			<c:forEach items = "${Tmovielist}" var = "movie">
-			<c:url value="Movietheaterlist" var="movielink">
+			<c:url value="Theatermoviesearch" var="movielink">
 				<c:param name="moviename" value="${movie.moviename}"/>
 				<c:param name="zipcode" value="${movie.zipcode}"/>
+				<c:param name="Searchmovie" value="${movie.searchmovie}"/>
 				<c:param name="date" value="${movie.date}"/>	
 			</c:url>
 			<c:import url="${movielink}"/>
@@ -85,20 +86,16 @@
 			</c:forEach>
 			
 			<c:forEach items="${Ttheaterlist}" var = "theater">
-			<c:url value="Movietheaterlist" var="theaterlink">
+			<c:url value="Theatermoviesearch" var="theaterlink">
 				<c:param name="theatername" value="${theater.theatername}"/>
 				<c:param name="zipcode" value = "${theater.zipcode}"/>
+				<c:param name="searchmovie" value="${theater.searchmovie}"/>
 				<c:param name="date" value="${theater.date}" />
 			</c:url>	
 			<c:import url="${theaterlink}"/>
 			<a href =<c:url value="${theaterlink}"/>> ${theater.theatername}</a>
 			</c:forEach>
-
-
 			
-			
-                  
-     	
 					
 				</div>
 				</nav>
