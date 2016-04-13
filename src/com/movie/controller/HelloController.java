@@ -198,16 +198,15 @@ public class HelloController {
 			Tmovie.getSearchmovie();
 			if("Search_by_movies".equalsIgnoreCase((String)request.getParameter("Searchmovie")))
 			{
-				Tmovie.setMoviename(request.getParameter("moviename"));
-				Tmovie.setZipcode(request.getParameter("zipcode"));
-				Tmovie.setDate(request.getParameter("date"));
+		
 				List<Theatermoviesearch> theatres = td.selectListTheatre(Tmovie);
 				model.addObject("theatres", td.selectListTheatre(Tmovie));
 			}
 			else
 			{
-				List<Theatermoviesearch> theatres = td.selectListThm(Tmovie);	
-				model.addObject("theatres", td.selectListThm(Tmovie));
+		
+				List<Theatermoviesearch> movies = td.selectListThm(Tmovie);	
+				model.addObject("movies", td.selectListThm(Tmovie));
 			}
 			
 			return model;
@@ -216,18 +215,15 @@ public class HelloController {
 
 @RequestMapping(value = "/TMtheaterlist", method= RequestMethod.GET)
 public ModelAndView TMtheaterlistform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie, HttpServletRequest req)
-{			
-/*	StringBuffer sb= new StringBuffer();*/
+{	
 	
-	Tmovie.setMoviename(req.getParameter("moviename"));
-	Tmovie.setZipcode(req.getParameter("zipcode"));
-	Tmovie.setDate(req.getParameter("date"));
-	Tmovie.setTheatername(req.getParameter("Theatername"));
 	ModelAndView model = new ModelAndView("MovieTheatersummary");
 	model.addObject("Tmovie", Tmovie);
 	
 	return model;
-}}
+}
+
+}
 
 	
 	

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -71,12 +72,26 @@
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 				
-				${TmovieTjsp}
+
+			
 				</div>
 				</nav>
 				</div>
 				</div>
-					<script src="js/jquery.min.js"></script>
+				
+			<c:forEach items="${theatres}" var = "theaterlist">
+				<c:url value="TMtheaterList" var = "tlistlink">
+					<c:param name="theatername" value="${theater.theatername}"/>
+					<c:param name="zipcode" value="${theater.zipcode}"/>
+					<c:param name="moviename" value="${theater.moviename}"/>
+					<c:param name="date" value="${theater.date}"/>
+				</c:url>
+				<c:import url="${tlistlink}"/>
+			<a href =<c:url value = "${tlistlink}"/>> ${theaterlist.theatername}</a>
+			</c:forEach>
+			
+			
+	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 	
