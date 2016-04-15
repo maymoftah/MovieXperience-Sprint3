@@ -91,7 +91,7 @@ $("#datepicker").datepicker("option", "dateFormat", $(this).val());
 						
 						<div class="form-group">
   						<input type="radio" name="Searchmovie" value="Search_by_movies" checked> Search By Movie<br>
- 						 <input type="radio" name="Searchmovie" value="Search_by_theatres"> Search By Theater<br>
+ 						 <input type="radio" name="Searchtheater" value="Search_by_theatres"> Search By Theater<br>
  						 </div>
  						<div class="form-group"><p> Select Date </p></div>
  						<div class ="form-group"> <input type="text" class="form-control" name="date" id="datepicker" required>

@@ -72,13 +72,12 @@
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 				
-			<h1> Theatres</h1>
-			
+			 <h1> Theatres</h1>
+		
 			<c:forEach items="${theatres}" var = "theater">
 			<c:url value="TMtheaterlist" var="theaterlink">
 				<c:param name="theatername" value="${theater.theatername}"/>
 				<c:param name="zipcode" value = "${theater.zipcode}"/>
-				<c:param name="searchmovie" value="${theater.searchmovie}"/>
 				<c:param name="date" value="${theater.date}" />
 			</c:url>	
 			<c:import url="${theaterlink}"/>
