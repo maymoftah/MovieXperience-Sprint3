@@ -89,10 +89,10 @@
 			</c:forEach>
 			
 			<c:forEach items="${Ttheaterlist}" var = "theater">
-			<c:url value="Theatermoviesearch" var="theaterlink">
+			<c:url value="Movietheaterlist" var="theaterlink">
 				<c:param name="theatername" value="${theater.theatername}"/>
 				<c:param name="zipcode" value = "${theater.zipcode}"/>
-				<c:param name="Searchtheater" value="Search_by_theatres"/>
+				<c:param name="Searchmovie" value="Search_by_theatres"/>
 				<c:param name="date" value="${theater.date}" />
 			</c:url>	
 			<c:import url="${theaterlink}"/>

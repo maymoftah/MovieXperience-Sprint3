@@ -72,16 +72,29 @@
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 				
-			 <h1> Theatres</h1>
+			 
 		
 			<c:forEach items="${theatres}" var = "theater">
 			<c:url value="TMtheaterlist" var="theaterlink">
 				<c:param name="theatername" value="${theater.theatername}"/>
+				<c:param name="moviename" value="${theater.moviename}"/>
 				<c:param name="zipcode" value = "${theater.zipcode}"/>
 				<c:param name="date" value="${theater.date}" />
 			</c:url>	
 			<c:import url="${theaterlink}"/>
 			<a href =<c:url value="${theaterlink}"/>> ${theater.theatername}</a>
+			</c:forEach>
+			
+			<c:forEach items = "${movies}" var = "movies">
+			<c:url value="TMtheaterlist" var="movielink">
+				<c:param name="moviename" value="${movies.moviename}"/>
+				<c:param name="theatername" value="${movies.theatername}"/>
+				<c:param name="zipcode" value="${movies.zipcode}"/>
+				<c:param name="date" value="${movies.date}"/>
+				
+			</c:url>
+			<c:import url="${movielink}"/>
+			<a href =<c:url value = "${movielink}"/>>${movies.moviename}</a>
 			</c:forEach>
 			
 				</div>

@@ -72,22 +72,22 @@
 				<div class="navbar-header">
 				
 				
-                      <label for="user_last_name">Zip code :</label><h2> ${Tmovie.zipcode }</h2>
+                      <label for="zipcode">Zip code :</label><h2> ${Tmovie.zipcode}</h2>
                       
                 
                 <br>
                
-                      <label for="user_first_name">Date* :</label> <h2>${Tmovie.date }</h2>
+                      <label for="date">Date* :</label> <h2>${Tmovie.date}</h2>
                       
                   
                   <br>
                   
-                     <label for="user_last_name">Movie name*:</label> <h2>${Tmovie.moviename }</h2>
+                     <label for="moviename">Movie name*:</label> <h2>${Tmovie.moviename}</h2>
                      
                 
                 <br>
                 
-                      <label for="user_job_title">Theater name:</label> <h2>${Tmovie.theatername }</h2>
+                      <label for="theatername">Theater name:</label> <h2>${Tmovie.theatername}</h2>
                      
             
                 <br>
