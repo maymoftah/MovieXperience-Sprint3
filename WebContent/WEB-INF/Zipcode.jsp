@@ -168,68 +168,6 @@ $("#datepicker").datepicker("option", "dateFormat", $(this).val());
     </div>
 </div>
 
-<div class="container">
-    <div class="col-md-12">
-
-        <div class="well">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-3"><a href=""><img src="http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2011/12/grey-movie-poster.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href=""><img src="https://sung650.files.wordpress.com/2015/11/maleficent_movie_poster_2.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href=""><img src="http://webneel.com/daily/sites/default/files/images/daily/02-2013/7-the-broken-creative-movie-poster-design.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href=""><img src="http://movieheritage.com/image/data/24/avatar.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://auteurs_production.s3.amazonaws.com/post_images_danny/multiple%20images/MPOTW/3_40_year_old_virgin_500.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://netdna.webdesignerdepot.com/uploads/2011/02/jurassicpark.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://illusion.scene360.com/wp-content/uploads/2014/03/cool-movie-posters-06.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://bandbent.files.wordpress.com/2012/08/expendables-2-movie-poster-comic-con-high-quality.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://andrewgforbes.files.wordpress.com/2012/04/titanic.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://creativeoverflow.net/wp-content/uploads/2011/05/50MoviePosters_39.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://i.kinja-img.com/gawker-media/image/upload/q1r971aonxwgfizmmiyn.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://www.howdesign.com/wp-content/uploads/Jungle-Book-great-movie-posters.jpg" alt="Image" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                </div>
-                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev"> </a>
-
-                <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
-            </div>
-            <!--/myCarousel-->
-        </div>
-        <!--/well-->
-    </div>
-</div>
-
-
 
 	
 	

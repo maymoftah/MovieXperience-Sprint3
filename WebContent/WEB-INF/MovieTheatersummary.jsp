@@ -57,7 +57,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<div class="page-header">
 				<h1>
 					 <small>Enjoy Free movie ticket booking!</small>

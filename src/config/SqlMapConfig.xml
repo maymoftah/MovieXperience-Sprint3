@@ -10,6 +10,7 @@
 		<typeAlias alias="Login" type="com.movie.model.Login"/>
 		<typeAlias alias="Moviesearch" type="com.movie.model.Moviesearch"/>
 		<typeAlias alias="Theatermoviesearch" type="com.movie.model.Theatermoviesearch"/>
+		<typeAlias alias="Seatbooking" type = "com.movie.model.Seatbooking"/>
 	</typeAliases>
 	
 	<environments default="development">
@@ -30,6 +31,7 @@
   	    	<mapper resource="com/movie/data/Msearch.xml"/> 
   	    	 <mapper resource="com/movie/data/Moviedropdown.xml"/>  
   	    	 <mapper resource="com/movie/data/Theatermoviezipcode.xml"/> 
+  	    	 <mapper resource = "com/movie/data/Seatbooking.xml"/>
   	    	   <!-- <mapper resource="com/movie/data/Theaterlist.xml"/>  -->
     </mappers>
 

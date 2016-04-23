@@ -1,17 +1,23 @@
 package com.movie.controller;
+import java.util.ArrayList;
 import java.util.List;
 import com.movie.model.Moviesearch;
+import com.movie.model.Seatbooking;
 import com.movie.dao.SearchmovieDAO;
-
+import com.movie.dao.SeatBookDAO;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
@@ -213,15 +219,35 @@ public class HelloController {
 		}
 
 
-@RequestMapping(value = "/TMtheaterlist", method= RequestMethod.GET)
-public ModelAndView TMtheaterlistform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie, HttpServletRequest req)
-{	
+	@RequestMapping(value = "/TMtheaterlist", method= RequestMethod.GET)
+	public ModelAndView TMtheaterlistform(@ModelAttribute("Tmovie")Theatermoviesearch Tmovie, HttpServletRequest req)
+	{	
+		
+		ModelAndView model = new ModelAndView("MovieTheatersummary");
+		model.addObject("Tmovie", Tmovie);
+		
+		return model;
+	}
 	
-	ModelAndView model = new ModelAndView("MovieTheatersummary");
-	model.addObject("Tmovie", Tmovie);
+	@RequestMapping(value="/Seatmap", method = RequestMethod.POST) 
+	public ModelAndView Seatmapform ()
+	{
+		ModelAndView model = new ModelAndView("Seatmap");
+		return model;
+	}
 	
-	return model;
-}
+	@RequestMapping(value="/Seatmap", method = RequestMethod.GET)
+	public String SeatBooked (@RequestParam String counter, @RequestParam String total) {
+	 
+	String	Str = "counter" + counter + "total" + total;
+	return Str;
+	}
+	
+	
+	
+	
+
+	
 
 }
 
