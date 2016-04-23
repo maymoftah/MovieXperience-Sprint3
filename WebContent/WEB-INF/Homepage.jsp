@@ -22,23 +22,27 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
-			<img alt="Bootstrap Image Preview" src="http://png.clipart.me/graphics/thumbs/102/vector-illustration-of-cinema-clap-and-film-reel_102906023.jpg" class="img-circle">
+		<div class="col-md-2">
+			<img alt="Bootstrap Image Preview" class="img-responsive" src="https://cdn4.iconfinder.com/data/icons/IMPRESSIONS/multimedia/png/128/video.png" >
+		</div>	
+		<div class="col-md-10 pull-left">
 			<div class="page-header">
 				<h1>
 					MovieXperience
 				</h1>
 			</div>
+		</div>
+		
 			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
 				</div>
 				
 					  <ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="SignupPage">Signup</a>
+							<a href="SignupPage">Sign Up</a>
 						</li>
 						<li>
-							<a href="Loginpage">SignIn</a>
+							<a href="Loginpage">Sign In</a>
 						</li> 
 							</ul>
 						</li>
@@ -48,8 +52,18 @@
 			</nav>
 		</div>
 	</div>
+	
 			<div class="row">
 				<div class="col-md-12">
+				<form action="Loginpage"  method= "get" >
+					<button  value="HomeXperience" class="btn btn-lg active btn-primary btn-block">
+						HomeXperience
+					</button> </form>
+					
+					<form action="Theaterhomepage"  method= "post" >
+					<button value = "TheatreXperinece" class="btn active btn-block btn-lg btn-info">
+						TheatreXperience
+					</button></form>
 					<div class="carousel slide" id="carousel-554439">
 						<ol class="carousel-indicators">
 							<li class="active" data-slide-to="0" data-target="#carousel-554439">
@@ -74,15 +88,7 @@
 							</div>
 						</div> <a class="left carousel-control" href="#carousel-554439" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-554439" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 					</div> 
-					<form action="Loginpage"  method= "get" >
-					<button  value="HomeXperience" class="btn btn-lg active btn-primary btn-block">
-						HomeXperience
-					</button> </form>
 					
-					<form action="Theaterhomepage"  method= "post" >
-					<button value = "TheatreXperinece" class="btn active btn-block btn-lg btn-info">
-						TheatreXperience
-					</button></form>
 					
 				</div>
 			</div>

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Movie Experience!!!</title>
+    <title>Home Xperience</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    <meta name="author" >
 
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<img alt="Bootstrap Image Preview" src="http://png.clipart.me/graphics/thumbs/102/vector-illustration-of-cinema-clap-and-film-reel_102906023.jpg" class="img-circle">
+			<img alt="Bootstrap Image Preview" src="https://lh4.googleusercontent.com/-7DRpMbj9je4/AAAAAAAAAAI/AAAAAAAAAMY/cdjQ6h0wJdk/photo.jpg" class="img-circle">
 			<div class="page-header">
 				<h1>
 					HomeXperience!!

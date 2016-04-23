@@ -21,3 +21,15 @@ h1
 {
 font-family: 'Limelight', cursive;
 }
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   padding-right: 10px
+}
+
+.navbar.navbar-fixed-top {
+    
+    padding-right: 10px
+}

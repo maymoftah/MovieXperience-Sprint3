@@ -15,13 +15,13 @@
 
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
     
-    <script src="static/js/scripts.js" ></script>
+   
 
   </head>
   <body >
-  <!-- Code added here -->
-  
+ 
  
 
     <div class="container-fluid">
@@ -30,7 +30,7 @@
 			<img alt="Bootstrap Image Preview" src="http://png.clipart.me/graphics/thumbs/102/vector-illustration-of-cinema-clap-and-film-reel_102906023.jpg" class="img-circle">
 			<div class="page-header">
 				<h1>
-					MovieXperience!!
+					MovieXperience
 				</h1>
 			</div>
 			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
