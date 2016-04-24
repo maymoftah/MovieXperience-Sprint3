@@ -56,11 +56,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 Absolute-Center">
-			<div class="page-header">
-				<h1>
-					 <small>Enjoy Unlimited movie watching!</small>
-				</h1>
-			</div>
+			
 
 <!-- original code -->
     <div class="container-fluid">
