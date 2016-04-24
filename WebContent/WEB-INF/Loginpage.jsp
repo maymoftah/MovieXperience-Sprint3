@@ -26,13 +26,16 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
-			<img alt="Bootstrap Image Preview" src="http://png.clipart.me/graphics/thumbs/102/vector-illustration-of-cinema-clap-and-film-reel_102906023.jpg" class="img-circle">
+		<div class="col-md-2">
+			<img alt="Bootstrap Image Preview" class="img-responsive" src="https://cdn4.iconfinder.com/data/icons/IMPRESSIONS/multimedia/png/128/video.png" >
+		</div>
+		<div class="col-md-10 ">
 			<div class="page-header">
 				<h1>
 					HomeXperience
 				</h1>
 			</div>
+		</div>
 			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
 					 
@@ -52,77 +55,140 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 Absolute-Center">
 			<div class="page-header">
 				<h1>
 					 <small>Enjoy Unlimited movie watching!</small>
 				</h1>
 			</div>
-			<blockquote>
-				<p>
-					The best one stop movie watching experience...
-				</p> <small>Fisher Jose <cite>Source Title</cite></small>
-			</blockquote>
-
 
 <!-- original code -->
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<h3 class="text-muted">
+			<h3 class="text-muted text-center">
 				Sign in and enjoy unlimited movie watching for free!
 			</h3>
 		</div>
 	</div>
 	
 	<div class="row">
-		<div class="col-md-6">
-		</div>
-		<div class="col-md-6">
-			<form class="form-horizontal" role="form" action="/Movie/LoginSuccesspage.html" method="post" onSubmit="return validation1(this);" >
+		<div class="col-md-12 ">
+			<form class="form-horizontal"  role="form" action="/Movie/LoginSuccesspage.html" method="post" onSubmit="return validation1(this);" >
 			${headerMessage}
+			
 				<div class="form-group">
-					 
-					<label for="inputEmail3" class="col-sm-2 control-label">
+					<label for="inputEmail3" class="col-sm-3 control-label ">
 						Email
 					</label>
-					<div class="col-sm-10">
+					<div class="col-sm-5 Absolute-Center">
 						<input type="email" class="form-control" name="emailid" id="emailid" required><p id="InvalidEmail1" style="color:red"></p>
 					</div>
 				</div>
+				
 				<div class="form-group">
 					 
-					<label for="inputPassword3" class="col-sm-2 control-label">
-						Password <p>&nbsp</p>
+					<label for="inputPassword3" class="col-sm-3 control-label">
+						Password 
 					</label> 
-					<div class="col-sm-10">
+					<div class="col-sm-5 Absolute-Center">
 						<input type="password" class="form-control" name="password" id="password" required><p id="InvalidPassword1" style="color:red"></p>
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<div class="checkbox">
-							 
+				<div class="form-group text-center">
+				<div class="row">
+					<div class="col-md-8 pull-right">
+						<div class="checkbox ">
 							<label>
 								<input type="checkbox"> Remember me
 							</label>
 						</div>
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						 
-						<button type="submit" class="btn btn-default">
+				
+				<div class="row">
+					<div class="col-sm-8">
+						<button type="submit" class="btn btn-default ">
 							Sign in
 						</button>
 					</div>
 				</div>
-			</form> Don't have an account? <a href="SignupPage" class="btn btn-block" type="button">Sign Up</a>
+				
+				
+				<div class="row">
+					<div class="text-center col-md-12">
+						Don't have an account? <a href="SignupPage" class="btn btn-block" type="button">Sign Up</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-4">
-		</div>
-	</div>
+	</form>
+		
+		
 </div>
+</div>
+
+<div class="container">
+    <div class="col-md-12">
+
+        <div class="well">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3"><a href=""><img src="http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2011/12/grey-movie-poster.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href=""><img src="https://sung650.files.wordpress.com/2015/11/maleficent_movie_poster_2.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href=""><img src="http://webneel.com/daily/sites/default/files/images/daily/02-2013/7-the-broken-creative-movie-poster-design.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href=""><img src="http://movieheritage.com/image/data/24/avatar.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://auteurs_production.s3.amazonaws.com/post_images_danny/multiple%20images/MPOTW/3_40_year_old_virgin_500.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://netdna.webdesignerdepot.com/uploads/2011/02/jurassicpark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://illusion.scene360.com/wp-content/uploads/2014/03/cool-movie-posters-06.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://bandbent.files.wordpress.com/2012/08/expendables-2-movie-poster-comic-con-high-quality.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="https://andrewgforbes.files.wordpress.com/2012/04/titanic.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://creativeoverflow.net/wp-content/uploads/2011/05/50MoviePosters_39.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://i.kinja-img.com/gawker-media/image/upload/q1r971aonxwgfizmmiyn.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://www.howdesign.com/wp-content/uploads/Jungle-Book-great-movie-posters.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev"> </a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+</div>
+
 
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>

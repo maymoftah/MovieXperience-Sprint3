@@ -125,52 +125,10 @@
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 					 
-				<!--  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">Brand</a> -->
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				
-					<!-- <ul  class="nav navbar-nav" id="genre">
-						<li class="active">
-							<a href="#">Link</a>
-						</li>
-						 <li>
-							<a href="#">Link</a>
-						</li>
-						 <li class="dropdown" id="genre">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">MovieGenre<strong class="caret"></strong></a> 
-							 <ul id="moviegenre"  class="dropdown-menu">
-								<li>
-									<a href="#">Comedy</a>
-								</li>
-								<li>
-									<a href="#">Horror</a>
-								</li>
-								<li>
-									<a href="#">Thriller</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Drama</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#"></a>
-								</li>
-							</ul> 
-						</li>
-					</ul> -->
-					
-		<!-- 			<select id="genre" name="genre">
-   <option value="US">Comedy</option>
-   <option value="CHINA">Thriller</option>
-   <option value="SG">Action</option>
-   <option value="MY">Romance</option>
-</select>  -->
 					
 					</div> 
 					<form class="navbar-form navbar-left" id="form" onSubmit="return validate(this);" action="/Movie/Moviesearchresult.html" role="search">
@@ -203,30 +161,10 @@
 					<img alt="Carousel Bootstrap_t" src="http://www.cine360degree.com/wp-content/uploads/ngg_featured/24-Movie-SURYA-POSTERS-6-150x150.jpg">
 					<img alt="Carousel Bootstrap_t" src="http://dreamlovewallpapers.com/wp-content/uploads/2015/06/The-Last-Witch-Hunter-2015-Movie-Poster-Wallpaper-150x150.jpg">	
 						
-						<!-- Deeps tried code here
-						<button class="btn btn-default">
-							MovieGenre
-						</button> 
-						<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">Action</a>
-							</li>
-							<li class="disabled">
-								<a href="#">Another action</a>
-							</li>
-							<li class="divider">
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>  -->
+						
 						</ul>
 					</div> 
-					<!--  <button type="button" class="btn btn-primary">
-						Submit
-					</button> -->
+					
 				</div> 
 				<div class="col-md-6">
 				</div>

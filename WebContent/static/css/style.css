@@ -33,3 +33,9 @@ font-family: 'Limelight', cursive;
     
     padding-right: 10px
 }
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  left: 0;  right: 0;
+}
